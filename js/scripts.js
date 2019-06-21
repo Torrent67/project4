@@ -4,25 +4,12 @@ $(document).ready(function(){
   var size;
   var toppings;
 
-  $(function(){
-    function Order () {
-      this.order = [],
-      this.currentId= 0
-    }
 
     Order.prototype.addOrder = function (newOrder) {
       newOrder.id = this.assignId();
       this.order.push(neworder);
     }
-    Order.prototype.assignId = function () {
-      this.currentId +=1;
-      return this.currentId;
-    }
 
-    function Size (name, balance) {
-      this.name = name,
-      this.size = size
-    }
 
     Account.prototype.Size = function(size) {
       this.size += size;
@@ -35,4 +22,9 @@ $(document).ready(function(){
       return this.size;
     }
     });
+    function Order () {
+      this.order = [];
+      this.currentId= 0
+    }
+
   });
