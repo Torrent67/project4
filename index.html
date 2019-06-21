@@ -9,5 +9,82 @@
     <title></title>
 </head>
 <body>
+  <body>
+   <div class="header">
+     <h1>Bitza Pizza</h1>
+     <p>We ONLY do carry out. Gas aint cheap.</p>
+   </div>
+     <div class="row">
+       <div class="side">
+         <form id ="neworder">
+           <div class="form-group">
+             <label for="name">Name for order.</label>
+             <input type="text" id="name">
+             <br><br>
+            <select name="time">
+              <option value="12">12:00 PM</option>
+              <option value="12">12:30 PM</option>
+              <option value="1">1:00 PM</option>
+              <option value="1">1:30 PM</option>
+              <option value="2">2:00 PM</option>
+              <option value="2">2:30 PM</option>
+              <option value="3">3:00 PM</option>
+              <option value="3">3:30 PM</option>
+              <option value="4">4:00 PM</option>
+              <option value="4">4:30 PM</option>
+              <option value="5">5:00 PM</option>
+              <option value="5">5:30 PM</option>
+              <option value="6">6:00 PM</option>
+              <option value="6">6:30 PM</option>
+              <option value="7">7:00 PM</option>
+              <option value="7">7:30 PM</option>
+              <option value="8">8:00 PM</option>
+              <option value="8">8:30 PM</option>
+              <option value="9">9:00 PM</option>
+              <option value="9">9:30 PM</option>
+              <option value="10">10:00 PM</option>
+            </select>
+            <button type="submit" id="btnT">Pick up time.</button>
+           </div>
+         </form>
+         <form id="currentOrder">
+           <div class="form-group">
+             <label for="displayOrder"></label>
+           </div>
+         </form>
+       </div>
+       <div class="main">
+         <form action="/action_page.php">
+           <radio name="sizes">
+              <input type="radio" name="sizes" value="small">A Small 10".</option>
+              <input type="radio" name="sizes" value="medium">A Medium 16".</option>
+              <input type="radio" name="sizes" value="large">A Large 20".</option>
+              <input type="radio" name="sizes" value="Xlarge">A Extra Large 25".</option>
+           </select>
+           <br><br>
+           <button type="submit" id="btnS">Select your size.</button>
+         </form>
+         <br><br><br>
+         <form action="/action_page.php">
+           <radio name="toppings">
+              <input type="radio" name="toppings value="meatA>Pepperoni.</option>
+              <input type="radio" name="toppings value="meatB>Italian Suasage.</option>
+              <input type="radio" name="toppings value="meatC>Salami.</option>
+              <input type="radio" name="toppings value="meatE>Canadian Bacon.</option>
+              <input type="radio" name="toppings value="cheeseA>Extra Mozzeralla.</option>
+              <input type="radio" name="toppings value="cheeseB>Provalone.</option>
+              <input type="radio" name="toppings value="cheeseC>Feta.</option>
+              <input type="radio" name="toppings value="vegiA>Peppers.</option>
+              <input type="radio" name="toppings value="vegiB>Onions.</option>
+              <input type="radio" name="toppings value="vegiB>Olives.</option>
+              <input type="radio" name="toppings value="vegiD>Spinach.</option>
+           </select>
+           <br><br>
+           <button type="submit" id="btnT">Select your Toppings.</button>
+         </form>
+     <div class="currentOrder">
+     <h2>Current Order</h2>
+     <p id="currentOrder"> </p>
+     </div>
   </body>
 </html>

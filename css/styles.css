@@ -1,40 +1,55 @@
-body{
-  background-image: url("img/bg2.png");
+body {
   background-size: cover;
 }
-h1{
-  color: red;
-  font-family: monospace;
+.header {
+  text-align: center;
+  margin-bottom: 80px;
 }
-.jumbotron{
-  background-image: url("img/hal1.gif");
-  background-size: cover;
-  max-height: 70%;
-  min-height: 80vh;
-  align-items: center;
+.row {
+  display: flex;
+  margin-bottom: 80px;
 }
-
-p{
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background: rgba(100, 20, 80, 0.5);
+  padding: 20px; /* Some padding */
+  margin-left: 10%;
+  margin-right: 10%;
   color: black;
-  float: left;
-  padding-top: 440px;
-  font-family: monospace;
-  text-shadow: 3px 3px 3px red;
 }
-#conV{
-  align-items: center;
-  font-family: monospace;
-  font-size: 20px;
-  color: lavender;
-  text-shadow: 2px 2px 2px red;
-  width: 50%;
-}
-#btn{
-  color: white;
-  background-color: black;
-}
-#number{
+.main {
+  flex: 30%; /* Set the width of the main content */
+  padding: 20px; /* Some padding */
+  margin-left: 10%;
+  margin-right: 10%;
+  background: rgba(0, 20, 100, 0.5);
   color: black;
-  font-weight: bold;
-  background-color: grey;
+}
+.row {
+    flex-direction: column;
+  }
+  .main {
+    margin-top: 5%;
+  }
+}
+input {
+  float: right;
+}
+.currentOrder{
+  margin-top: 200px;
+  text-align: center;
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  min-height: 300px;
+  max-width: 50%;
+  margin: auto;
+  color: black;
+}
+}
+#currentOrder{
+  margin-top: 60px;
+  font-size: 40px;
+  text-align: center;
+  background: rgba(100, 100, 100, 0.5);
 }
