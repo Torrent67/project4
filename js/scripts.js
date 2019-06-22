@@ -4,6 +4,7 @@
   var toppings = [];
   var name
   var time
+  var addons = 1
 
   function Order() {
     this.toppings = [];
@@ -17,9 +18,15 @@
   order.addToppings ();
   this.order.push(neworder);
 }
+
   Order.prototype.addToppings = function (toppings) {
   this.toppings.push(toppings);
 }
+
+ Order.prototype.Price = function (){
+  this.cost += this.size
+  this.cost += addons
+ }
 
 $(document).ready(function(){
 
@@ -33,12 +40,13 @@ $("#neworder").submit(function(event){
       sizes = parseInt($(this).val());
       order.size = sizes
   })
-
     $("input:checkbox[name=toppings]:checked").each(function(){
-        toppings = parseFloat($(this).val());
-        order.addToppings(toppings);
-  })
-  $("#currentOrder").append(name + time + order "<br>")
+      toppings = $(this).val();
+      order.addToppings(toppings);
+      addons += 1;
+})
+      order.Price();
+  $("#currentOrder").append(name +"<br>" + time + "<br>" + order.size + "inch" + "<br>" + order.toppings + "<br>" + "Pizza")
 
 console.log(name);
 console.log(time);

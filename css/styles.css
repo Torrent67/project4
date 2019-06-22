@@ -1,51 +1,13 @@
   body {
+    font-size: 15px;
     background-size: cover;
   }
   .header {
     text-align: center;
     margin-bottom: 80px;
   }
-  .row {
-    display: flex;
-    margin-bottom: 80px;
-  }
-  .side {
-    flex: 30%; /* Set the width of the sidebar */
-    background: rgba(100, 20, 80, 0.5);
-    padding: 20px; /* Some padding */
-    margin-left: 10%;
-    margin-right: 10%;
-    color: black;
-  }
-  .main {
-    flex: 30%; /* Set the width of the main content */
-    padding: 20px; /* Some padding */
-    margin-left: 10%;
-    margin-right: 10%;
-    background: rgba(0, 20, 100, 0.5);
-    color: black;
-  }
-  .row {
-      flex-direction: column;
-    }
-    .main {
-      margin-top: 5%;
-    }
-  }
-  input {
-    float: right;
-  }
-  .currentOrder{
-    margin-top: 200px;
-    text-align: center;
-    font-size: 30px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    min-height: 300px;
-    max-width: 50%;
-    margin: auto;
-    color: black;
-  }
+  #neworder{
+    margin-left: 20px;
   }
   #currentOrder{
     margin-top: 60px;
