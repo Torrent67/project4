@@ -19,7 +19,7 @@
         <label for="name">Name for order.</label>
         <input type="text" id="name">
         <br><br>
-        <select name="time">
+        <select name="time" id="time">
         <option value="12">12:00 PM</option>
         <option value="12">12:30 PM</option>
         <option value="1">1:00 PM</option>
@@ -43,22 +43,20 @@
         <option value="10">10:00 PM</option>
         </select>
         <button type="submit" id="btnT">Pick up time.</button>
-      </div>
-    </form>
-    <form id="neworder">
+    </div>
        <h2>Customize your pie</h2>
-       <div class="form-group">
-       <label for="sizes">Pick a size!</label><br>
-          <checkbox name="sizes">
+    <div class="form-group">
+      <label for="sizes">Pick a size!</label><br>
+      <checkbox name="sizes">
         <input type="checkbox" name="sizes" value="small">A Small 10".<br>
         <input type="checkbox" name="sizes" value="medium">A Medium 16".<br>
         <input type="checkbox" name="sizes" value="large">A Large 20".<br>
         <input type="checkbox" name="sizes" value="Xlarge">A Extra Large 25".<br>
-        </div>
-          <br><br>
-      <div class="form-group">
+    </div>
+        <br><br>
+    <div class="form-group">
         <label for="toppings">Choose wisely!</label><br>
-      <checkbox name="toppings">
+        <checkbox name="toppings">
         <input type="checkbox" name="toppings" value="meatA">Pepperoni.<br>
         <input type="checkbox" name="toppings" value="meatB">Italian Suasage.<br>
         <input type="checkbox" name="toppings" value="meatC">Salami.<br>
@@ -70,7 +68,7 @@
         <input type="checkbox" name="toppings" value="vegiB">Onions.<br>
         <input type="checkbox" name="toppings" value="vegiB">Olives.<br>
         <input type="checkbox" name="toppings" value="vegiD">Spinach<br>
-      </div>
+    </div>
         <button type="submit" id="btnT">Make your order.</button>
     </form>
       <div class="form-group">
