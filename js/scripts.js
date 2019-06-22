@@ -2,6 +2,8 @@
   var order = new Order
   var sizes
   var toppings = [];
+  var name
+  var time
 
   function Order() {
     this.toppings = [];
@@ -20,17 +22,26 @@
 }
 
 $(document).ready(function(){
-  $("#neworder").submit(function(event){
+
+$("#neworder").submit(function(event){
     event.preventDefault();
+    name = $("input#name").val();
+    time = $("#time").val();
+
     $("input:checkbox[name=sizes]:checked").each(function()
-    {
-      sizes = $(this).val();
+  {
+      sizes = parseInt($(this).val());
       order.size = sizes
-    })
+  })
+
     $("input:checkbox[name=toppings]:checked").each(function(){
-        toppings = $(this).val();
+        toppings = parseFloat($(this).val());
         order.addToppings(toppings);
-    })
+  })
+  $("#currentOrder").append(name + time + order "<br>")
+
+console.log(name);
+console.log(time);
 console.log(order);
 });
 });
