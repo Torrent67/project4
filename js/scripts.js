@@ -24,8 +24,8 @@
 }
 
  Order.prototype.Price = function (){
-  this.cost += this.size
-  this.cost += addons
+  this.price = this.size
+  this.price += addons
  }
 
 $(document).ready(function(){
@@ -43,10 +43,10 @@ $("#neworder").submit(function(event){
     $("input:checkbox[name=toppings]:checked").each(function(){
       toppings = $(this).val();
       order.addToppings(toppings);
-      addons += 1;
+      addons += 1
 })
       order.Price();
-  $("#currentOrder").append(name +"<br>" + time + "<br>" + order.size + "inch" + "<br>" + order.toppings + "<br>" + "Pizza")
+  $("#currentOrder").append(name +"<br>" + time + "<br>" + order.size + "inch" + "<br>" + order.toppings + "<br>" + "Pizza for" + "<br>" + order.price + "<br>" +"dollars")
 
 console.log(name);
 console.log(time);
